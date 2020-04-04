@@ -24439,7 +24439,6 @@
 
 
 
-const output = document.querySelector('.modal__value');
 const rangeSLider = document.querySelector('.adjust-bar.adjust-bar_theme_temp');
 
 // rangeSLider.oninput = function() {
@@ -24491,7 +24490,6 @@ function setRotate(rotate) {
     curRotate = rotate;
     curValue = rotateToValue(rotate);
 
-    document.querySelector('.modal_knob .modal__value').innerHTML = '+' + curValue;
     document.querySelector('.knob__value').innerHTML = '+' + curValue;
     document.querySelector('.knob__indicator').style.strokeDasharray = curRotate * 360 * 1.73 + INDICATOR_OFFSET + ' 629';
     document.querySelector('.knob__arrow').style.transform = 'rotate(' + (curRotate * 360) + 'deg)';
@@ -24572,46 +24570,12 @@ function setEvtListeners() {
 setEvtListeners();
 
 
-document.querySelectorAll('.modal_close').forEach(b => {
-    b.onclick = function() {
-        document.querySelectorAll('.modal').forEach(m => {
-            m.classList.toggle('modal_open', false);
-            document.querySelector('body').style.overflow = 'auto';
-        });
-    }
-});
-
 const TEMPS = {
     'manual': -10,
     'cold': 0,
     'warm': 23,
     'hot': 30
 }
-
-document.querySelectorAll('.modal__filter-item_temp').forEach(l => {
-    l.onclick = function() {
-        document.querySelector('.adjust-bar_theme_temp').value = TEMPS[this.id];
-        document.querySelector('.modal_temp .modal__value').innerHTML = TEMPS[this.id] > 0 ? '+' + TEMPS[this.id] : TEMPS[this.id];
-    }
-});
-
-const showModal = function(selector) {
-    document.querySelector(selector).classList.toggle('modal_open', true);
-    document.querySelector('body').style.overflow = 'hidden';
-}
-
-
-document.querySelectorAll('.panel_lamp').forEach(p => {
-    p.onclick = function() {
-        showModal('.modal_light');
-    }
-});
-
-document.querySelectorAll('.panel_floor').forEach(p => {
-    p.onclick = function() {
-        showModal('.modal_knob');
-    }
-});
 
 document.addEventListener("DOMContentLoaded", function () {
     $('.card').each(function(e) {
