@@ -306,7 +306,16 @@ footer {
     font-family: OpenSansReg;
 }
 
+.card {
+    background: #ebebeb;
+    color: #333;
+    border-radius: 23px;
+    box-sizing: border-box;
+    padding: 0 20px 20px 20px
+}
+
 .card_size_s {
+    border-radius: 22px;
     grid-column: span 2;
     grid-row: span 1
 }
@@ -321,19 +330,6 @@ footer {
     grid-row: span 3
 }
 
-.card_size_c {
-    grid-column: span 3;
-    grid-row: span 2
-}
-
-.card {
-    background: #ebebeb;
-    color: #333;
-    border-radius: 20px;
-    box-sizing: border-box;
-    padding: 0 20px 20px 20px
-}
-
 .critical {
     color: #fff;
     padding: 0
@@ -342,6 +338,7 @@ footer {
 * {
     box-sizing: border-box;
 }
+
 html {
     height: 100%;
 }
