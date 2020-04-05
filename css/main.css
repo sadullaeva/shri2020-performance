@@ -857,21 +857,6 @@ html {
     float: left
 }
 
-.video-volume {
-    background: url(../img/sound_n.png);
-    background-size: cover;
-    height: 40px;
-    width: 40px;
-    margin-left: 40px;
-    cursor: pointer
-}
-
-.video-volume_unmuted {
-    background: green;
-    background: url(../img/sound.png);
-    background-size: cover
-}
-
 .analyser {
     position: absolute;
     z-index: 5;
