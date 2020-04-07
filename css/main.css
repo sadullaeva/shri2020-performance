@@ -418,7 +418,7 @@ html {
     border-radius: 20px;
     background-size: cover;
     background-position: 0 0;
-    touch-action: none
+    touch-action: none;
 }
 
 .card-data_graph {
