@@ -41,10 +41,6 @@ ol, ul {
   list-style: none
 }
 
-[tabindex="-1"]:focus {
-  outline: 0 !important;
-}
-
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -179,11 +175,6 @@ h6, .h6 {
   background-color: #fff;
   background-clip: border-box;
   border-radius: 0.25rem;
-}
-
-.card-body {
-  flex: 1 1 auto;
-  padding: 1.25rem;
 }
 
 .card-title {

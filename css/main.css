@@ -552,14 +552,6 @@ html {
     overflow: scroll
 }
 
-.controls-text {
-    float: left
-}
-
-.video-control {
-    float: left
-}
-
 @media (max-width: 1230px) {
     .card_size_m {
         grid-column: span 4
