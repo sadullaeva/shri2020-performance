@@ -1,7 +1,10 @@
-<html><head>
+<html lang="ru">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="robots" content="noindex">
+    <meta name="description" content="Приложение для умного дома">
+    <title>Яндекс Дом | Лента событий</title>
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="shortcut icon" href="favicon.ico">
@@ -10,7 +13,7 @@
 
 <body>
 <header>
-    <img class="header-logo" src="img/yd2.png">
+    <img class="header-logo" src="img/yd2.png" alt="Логотип Яндекс Дом">
     <menu class="header-menu">
         <a class="header-menu__link" href="cam.html">Видеонаблюдение</a>
         <a class="header-menu__link header-menu__link_active " href="index.html">События</a>
@@ -37,7 +40,7 @@
             <div class="card card_size_l">
                 <div class="card-heading">
                     <div class="card-icon-wrap">
-                        <img class="card-icon" src="img/stats.svg">
+                        <img class="card-icon" src="img/stats.svg" alt="Статистика расходов">
                     </div>
                     <h3 class="card-title">Еженедельный отчет по расходам ресурсов</h3>
                 </div>
@@ -46,14 +49,14 @@
                     <p class="card-time">19:00, Сегодня</p>
                 </div>
                 <p class="card-description card-description_big">Так держать! За последнюю неделю вы потратили на 10% меньше ресурсов, чем неделей ранее.</p><div class="card-data card-data_graph">
-                <img class="card-data_graph-img" src="img/data-graph.png">
+                <img class="card-data_graph-img" src="img/data-graph.png" alt="График расходов">
             </div></div>
 
 
             <div class="card card_size_s">
                 <div class="card-heading">
                     <div class="card-icon-wrap">
-                        <img class="card-icon" src="img/key.svg">
+                        <img class="card-icon" src="img/key.svg" alt="Входная дверь">
                     </div>
                     <h3 class="card-title">Дверь открыта</h3>
                 </div>
@@ -67,7 +70,7 @@
             <div class="card card_size_s">
                 <div class="card-heading">
                     <div class="card-icon-wrap">
-                        <img class="card-icon" src="img/robot-cleaner.svg">
+                        <img class="card-icon" src="img/robot-cleaner.svg" alt="Робот-пылесос">
                     </div>
                     <h3 class="card-title">Уборка закончена</h3>
                 </div>
@@ -81,7 +84,7 @@
             <div class="card card_size_s">
                 <div class="card-heading">
                     <div class="card-icon-wrap">
-                        <img class="card-icon" src="img/router.svg">
+                        <img class="card-icon" src="img/router.svg" alt="Роутер">
                     </div>
                     <h3 class="card-title">Новый пользователь</h3>
                 </div>
@@ -95,7 +98,7 @@
             <div class="card card_size_m">
                 <div class="card-heading">
                     <div class="card-icon-wrap">
-                        <img class="card-icon" src="img/thermal.svg">
+                        <img class="card-icon" src="img/thermal.svg" alt="Климатический режим">
                     </div>
                     <h3 class="card-title">Изменен климатический режим</h3>
                 </div>
@@ -116,7 +119,7 @@
             <div class="card card_size_m critical">
                 <div class="card-heading heading-critical">
                     <div class="card-icon-wrap">
-                        <img class="card-icon" src="img/ac.svg">
+                        <img class="card-icon" src="img/ac.svg" alt="Кондиционирование">
                     </div>
                     <h3 class="card-title">Невозможно включить кондиционер</h3>
                 </div>
@@ -130,7 +133,7 @@
             <div class="card card_size_m">
                 <div class="card-heading">
                     <div class="card-icon-wrap">
-                        <img class="card-icon" src="img/music.svg">
+                        <img class="card-icon" src="img/music.svg" alt="Музыка">
                     </div>
                     <h3 class="card-title">Музыка включена</h3>
                 </div>
@@ -142,26 +145,28 @@
 
                 <div class="song-area">
                     <div class="cover-wrap">
-                        <img class="cover" src="https://avatars.yandex.net/get-music-content/193823/1820a43e.a.5517056-1/m1000x1000">
+                        <img class="cover" src="https://avatars.yandex.net/get-music-content/193823/1820a43e.a.5517056-1/m1000x1000" alt="High As Hope">
                     </div>
 
                     <div class="song-data">
                         <h4 class="song-title">Florence &amp; The Machine - Big God</h4>
                         <div class="song-timeline-wrap">
-                            <input type="range" class="song-range" name="song-range" min="0" max="100" value="" step="1">
+                            <label for="song-range" style="display: none">Текущая композиция</label>
+                            <input id="song-range" type="range" class="song-range" name="song-range" min="0" max="100" value="" step="1">
                             <div class="song-length">4:31</div>
                         </div>
                     </div>
                 </div>
                 <div class="player-controls">
-                    <button class="player-control player-control_prev">
-                        <img src="img/Prev.svg">
+                    <button class="player-control player-control_prev" aria-label="Предыдущая композиция">
+                        <img src="img/Prev.svg" alt="Предыдущая композиция">
                     </button>
-                    <button class="player-control player-control_next">
-                        <img src="img/Prev.svg">
+                    <button class="player-control player-control_next" aria-label="Следующая композиция">
+                        <img src="img/Prev.svg" alt="Следующая композиция">
                     </button>
 
-                    <input type="range" class="volume-range" name="volume-range" min="0" max="100" value="50" step="1">
+                    <label for="volume-range" style="display: none">Регулировка громкости</label>
+                    <input id="volume-range" type="range" class="volume-range" name="volume-range" min="0" max="100" value="50" step="1">
                     <div class="song-volume">80%</div>
                 </div>
 
@@ -173,7 +178,7 @@
             <div class="card card_size_m">
                 <div class="card-heading">
                     <div class="card-icon-wrap">
-                        <img class="card-icon" src="img/fridge.svg">
+                        <img class="card-icon" src="img/fridge.svg" alt="Холодильник">
                     </div>
                     <h3 class="card-title">Заканчивается молоко</h3>
                 </div>
@@ -184,7 +189,7 @@
                 <p class="card-description card-description_big description_critical">Кажется, в холодильнике заканчивается молоко. Вы хотите добавить его в список покупок?</p>
 
                 <div class="buttons-wrap">
-                    <button class="button button_yellow" type="button">Да</button><button class="button">Нет</button>
+                    <button class="button button_yellow" type="button" aria-label="Да">Да</button><button class="button" aria-label="Нет">Нет</button>
                 </div>
 
             </div>
@@ -193,7 +198,7 @@
             <div class="card card_size_s">
                 <div class="card-heading">
                     <div class="card-icon-wrap">
-                        <img class="card-icon" src="img/battery.svg">
+                        <img class="card-icon" src="img/battery.svg" alt="Оконный сенсор">
                     </div>
                     <h3 class="card-title">Зарядка завершена</h3>
                 </div>
@@ -207,7 +212,7 @@
             <div class="card card_size_l critical">
                 <div class="card-heading heading-critical">
                     <div class="card-icon-wrap" style="overflow: hidden;">
-                        <img class="card-icon" src="img/cam.svg">
+                        <img class="card-icon" src="img/cam.svg" alt="Сенсор движения">
                     </div>
                     <h3 class="card-title">Пылесос застрял</h3>
                 </div>
@@ -226,7 +231,7 @@
                 <div class="card card_size_s">
                     <div class="card-heading">
                         <div class="card-icon-wrap">
-                            <img class="card-icon" src="img/kettle.svg">
+                            <img class="card-icon" src="img/kettle.svg" alt="Чайник">
                         </div>
                         <h3 class="card-title">Вода вскипела</h3>
                     </div>
