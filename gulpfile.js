@@ -22,7 +22,7 @@ function js() {
 
 function html() {
     return src(['index.html'])
-        .pipe(htmlmin())
+        .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(dest('dist'))
 }
 
