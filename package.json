@@ -1,0 +1,26 @@
+{
+  "name": "shri2020-performance",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sadullaeva/shri2020-performance.git"
+  },
+  "keywords": [],
+  "author": "Marina Lazarenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sadullaeva/shri2020-performance/issues"
+  },
+  "homepage": "https://github.com/sadullaeva/shri2020-performance#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-minify": "^3.1.0"
+  }
+}
